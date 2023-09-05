@@ -1,6 +1,9 @@
 .container{
-    background-color: #E2E8F0;
+    display: flex;
+    flex-direction: column;
     width: 50%;
+    background-color: #b1bdce;
+   
 }
 
 .mainContainer{
@@ -8,6 +11,7 @@
     flex-direction: row;
     justify-content: space-around;
     width: 400px;
+    background-color: #E2E8F0;
 }
 .list li{
     display: flex;
@@ -20,4 +24,11 @@
     padding: 20px;
     background: #CBD5E1;
    
+}
+.rightContainer{
+    display: flex;
+    justify-content:right;
+    background-color: #E2E8F0;
+    text-align: center;
+    
 }

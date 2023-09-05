@@ -1,17 +1,23 @@
+import React from 'react';
 
-import './App.css';
-
+import { allData } from './data'; // داده های مورد استفاده
+import ItemListComponent from './components/shared/ItemListComponent';
 import TodoList from './components/TodoList';
-import List from './components/shared/List';
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-     <TodoList />
-     {/* <List /> */}
-    
+    <Provider store={store}>
+    <div>
+      
+      <h2>All Data</h2>
+      {/* <ItemListComponent data={allData} /> */}
+      <TodoList data={allData} />
+      
     </div>
+    </Provider>
   );
-}
+};
 
 export default App;
