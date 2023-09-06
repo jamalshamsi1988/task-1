@@ -13,7 +13,7 @@ import { addItem, removeItem } from '../redux/listAction';
 
 
 
-const TodoList = () => {
+const TodoList = ({data}) => {
   
   const state = useSelector(state => state.listState);
   const dispatch=useDispatch();
